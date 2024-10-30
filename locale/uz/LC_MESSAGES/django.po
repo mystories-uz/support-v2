@@ -1,0 +1,333 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-29 15:42+0500\n"
+"PO-Revision-Date: 2024-10-29 15:41+0500\n"
+"Last-Translator:   <jahongirhakimjonov@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Translated-Using: django-rosetta 0.10.0\n"
+
+#: apps/bot/handlers/answer.py:15
+msgid "Please send your answer:"
+msgstr "Iltimos, javobingizni yuboring:"
+
+#: apps/bot/handlers/answer.py:29
+msgid "The message you are replying to does not exist."
+msgstr "Siz javob berayotgan xabar mavjud emas."
+
+#: apps/bot/handlers/answer.py:42
+msgid ""
+"You have received a reply:\n"
+"\n"
+msgstr "Siz javob oldingiz:\n"
+
+#: apps/bot/handlers/answer.py:48
+msgid "Your answer has been saved."
+msgstr "Javobingiz saqlandi."
+
+#: apps/bot/handlers/contact.py:27 apps/bot/handlers/register.py:25
+#: apps/bot/keyboard/home.py:7
+msgid "Contact"
+msgstr "Aloqa"
+
+#: apps/bot/handlers/contact.py:29
+msgid "Cancel"
+msgstr "Bekor qilish"
+
+#: apps/bot/handlers/contact.py:31
+msgid "Contact us or cancel:"
+msgstr "Biz bilan bog'laning yoki bekor qiling:"
+
+#: apps/bot/handlers/contact.py:38
+msgid "Has been canceled."
+msgstr "Bekor qilindi."
+
+#: apps/bot/handlers/contact.py:47
+msgid "Please send your message:"
+msgstr "Iltimos, xabaringizni yuboring:"
+
+#: apps/bot/handlers/contact.py:69
+msgid "You have reached the daily message limit."
+msgstr "Kunlik xabarlar limitiga yetdingiz."
+
+#: apps/bot/handlers/contact.py:108
+msgid "Your message has been sent and saved."
+msgstr "Xabaringiz yuborildi va saqlandi."
+
+#: apps/bot/handlers/info.py:25
+msgid "There is no information available."
+msgstr ""
+
+#: apps/bot/handlers/language.py:53
+msgid "Language updated successfully!"
+msgstr "Til muvaffaqiyatli yangilandi!"
+
+#: apps/bot/handlers/register.py:21 apps/bot/keyboard/home.py:9
+msgid "Language"
+msgstr "Til"
+
+#: apps/bot/handlers/register.py:23 apps/bot/keyboard/home.py:8
+#: apps/support/models/info.py:44
+msgid "Info"
+msgstr "Ma'lumot"
+
+#: apps/bot/handlers/register.py:30
+msgid "Unknown command."
+msgstr "Noma'lum buyruq."
+
+#: apps/bot/handlers/register.py:53
+msgid "Unknown action."
+msgstr "Noma'lum harakat."
+
+#: apps/bot/handlers/user.py:27
+msgid ""
+"Welcome to the bot! You can use the main menu to navigate the bot. If you "
+"have any questions, please contact the support team."
+msgstr ""
+"Botga xush kelibsiz! Botni boshqarish uchun asosiy menyudan foydalanishingiz "
+"mumkin. Agar sizda biron bir savol bo'lsa, iltimos, qo'llab-quvvatlash "
+"jamoasi bilan bog'laning."
+
+#: apps/bot/handlers/user.py:33
+msgid "An error occurred."
+msgstr "Xatolik yuz berdi."
+
+#: apps/bot/middlewares/antiflood_middleware.py:18
+msgid "You are making request too often"
+msgstr "Siz juda tez-tez so'rov yuborayabsiz."
+
+#: apps/bot/utils/news.py:27
+#, python-brace-format
+msgid ""
+"{news.title}\n"
+"\n"
+"{news.content}"
+msgstr ""
+
+#: apps/support/admin/users.py:32 apps/support/models/users.py:46
+msgid "Til"
+msgstr ""
+
+#: apps/support/admin/users.py:43 apps/support/models/users.py:53
+msgid "Rol"
+msgstr ""
+
+#: apps/support/admin/users.py:53 apps/support/models/users.py:25
+msgid "Telegram ID"
+msgstr ""
+
+#: apps/support/models/groups.py:12
+msgid "Guruh nomi"
+msgstr ""
+
+#: apps/support/models/groups.py:13
+msgid "Guruh ID"
+msgstr ""
+
+#: apps/support/models/groups.py:14 apps/support/models/info.py:23
+#: apps/support/models/info.py:52 apps/support/models/users.py:48
+msgid "Faolmi"
+msgstr ""
+
+#: apps/support/models/groups.py:21
+msgid "Guruh"
+msgstr ""
+
+#: apps/support/models/groups.py:22 core/config/unfold_navigation.py:33
+msgid "Guruhlar"
+msgstr ""
+
+#: apps/support/models/info.py:18 apps/support/models/users.py:37
+msgid "Ism va Familiya"
+msgstr ""
+
+#: apps/support/models/info.py:19
+msgid "Tug'ilgan kun"
+msgstr ""
+
+#: apps/support/models/info.py:20
+msgid "Yosh"
+msgstr ""
+
+#: apps/support/models/info.py:21 apps/support/models/info.py:49
+#: apps/support/models/info.py:50
+msgid "Ma'lumot"
+msgstr ""
+
+#: apps/support/models/info.py:22 apps/support/models/news.py:19
+msgid "Rasm"
+msgstr ""
+
+#: apps/support/models/info.py:45
+msgid "Infos"
+msgstr ""
+
+#: apps/support/models/info.py:51
+msgid "Link"
+msgstr ""
+
+#: apps/support/models/info.py:59 apps/support/models/info.py:60
+msgid "Info Links"
+msgstr ""
+
+#: apps/support/models/messages.py:20 apps/support/models/messages.py:59
+#: apps/support/models/users.py:15
+msgid "Foydalanuvchi"
+msgstr ""
+
+#: apps/support/models/messages.py:22
+msgid "Chat ID"
+msgstr ""
+
+#: apps/support/models/messages.py:23
+msgid "Message ID"
+msgstr ""
+
+#: apps/support/models/messages.py:27 apps/support/models/messages.py:33
+#: apps/support/models/messages.py:38
+msgid "Xabar"
+msgstr ""
+
+#: apps/support/models/messages.py:29
+msgid "Javob berildimi"
+msgstr ""
+
+#: apps/support/models/messages.py:34 core/config/unfold.py:77
+#: core/config/unfold_navigation.py:80 core/config/unfold_navigation.py:83
+msgid "Xabarlar"
+msgstr ""
+
+#: apps/support/models/messages.py:43 apps/support/models/messages.py:51
+msgid "Javob"
+msgstr ""
+
+#: apps/support/models/messages.py:52 core/config/unfold.py:81
+msgid "Javoblar"
+msgstr ""
+
+#: apps/support/models/messages.py:61
+msgid "Xabarlar sanasi"
+msgstr ""
+
+#: apps/support/models/messages.py:62
+msgid "Xabarlar soni"
+msgstr ""
+
+#: apps/support/models/messages.py:69 apps/support/models/messages.py:70
+msgid "Kunlik xabarlar"
+msgstr ""
+
+#: apps/support/models/news.py:11
+msgid "Rasm hajmi 5 MB dan katta bo'lmasligi kerak."
+msgstr ""
+
+#: apps/support/models/news.py:15
+msgid "Sarlavha"
+msgstr ""
+
+#: apps/support/models/news.py:16
+msgid "Maqola"
+msgstr ""
+
+#: apps/support/models/news.py:27
+msgid "Yangilik"
+msgstr ""
+
+#: apps/support/models/news.py:28 core/config/unfold_navigation.py:94
+#: core/config/unfold_navigation.py:97
+msgid "Yangiliklar"
+msgstr ""
+
+#: apps/support/models/users.py:13
+msgid "Admin"
+msgstr ""
+
+#: apps/support/models/users.py:14
+msgid "Moderator"
+msgstr ""
+
+#: apps/support/models/users.py:19
+msgid "O'zbek tili"
+msgstr ""
+
+#: apps/support/models/users.py:20
+msgid "Rus tili"
+msgstr ""
+
+#: apps/support/models/users.py:21
+msgid "Ingliz tili"
+msgstr ""
+
+#: apps/support/models/users.py:30
+msgid "Foydalanuvchi nomi"
+msgstr ""
+
+#: apps/support/models/users.py:32
+msgid "Ism"
+msgstr ""
+
+#: apps/support/models/users.py:34
+msgid "Familiya"
+msgstr ""
+
+#: apps/support/models/users.py:40
+msgid "Telefon raqam"
+msgstr ""
+
+#: apps/support/models/users.py:58
+msgid "Bot Foydalanuvchisi"
+msgstr ""
+
+#: apps/support/models/users.py:59 core/config/unfold_navigation.py:52
+#: core/config/unfold_navigation.py:55
+msgid "Bot Foydalanuvchilari"
+msgstr ""
+
+#: apps/support/models/users.py:62
+msgid "Bot Foydalnuvchisi"
+msgstr ""
+
+#: core/config/unfold.py:85
+msgid "Kunlik Xabarlar"
+msgstr ""
+
+#: core/config/unfold.py:97 core/config/unfold_navigation.py:66
+#: core/config/unfold_navigation.py:69
+msgid "Ma'lumotlar"
+msgstr ""
+
+#: core/config/unfold.py:101
+msgid "Ma'lumot Linklari"
+msgstr ""
+
+#: core/config/unfold_navigation.py:21
+msgid "Bosh sahifa"
+msgstr ""
+
+#: core/config/unfold_navigation.py:30 core/config/unfold_navigation.py:41
+msgid "Foydalanuvchilar"
+msgstr ""
+
+#: core/settings.py:102
+msgid "Russia"
+msgstr ""
+
+#: core/settings.py:103
+msgid "English"
+msgstr ""
+
+#: core/settings.py:104
+msgid "Uzbek"
+msgstr ""
