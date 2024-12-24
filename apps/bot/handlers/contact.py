@@ -12,6 +12,9 @@ from apps.support.models import Messages, DailyMessages, Answer, Group, BotUsers
 from apps.support.models import Messages, DailyMessages, Group
 
 
+from django.utils.translation import get_language
+
+
 def handle_contact(message: Message, bot: TeleBot):
     activate(set_language_code(message.from_user.id))
     update_or_create_user(
@@ -32,17 +35,17 @@ def handle_contact(message: Message, bot: TeleBot):
 
 
 def handle_delete_contact_callback(call: CallbackQuery, bot: TeleBot):
-    activate(set_language_code(call.message.from_user.id))
+    activate(set_language_code(call.from_user.id))
     bot.delete_message(call.message.chat.id, call.message.message_id)
-    activate(set_language_code(call.message.from_user.id))
+    activate(set_language_code(call.from_user.id))
     bot.send_message(
         call.message.chat.id, _("Has been canceled."), reply_markup=get_main_buttons()
     )
-    activate(set_language_code(call.message.from_user.id))
+    activate(set_language_code(call.from_user.id))
 
 
 def handle_contact_callback_query(call: CallbackQuery, bot: TeleBot):
-    activate(set_language_code(call.message.from_user.id))
+    activate(set_language_code(call.from_user.id))
     bot.delete_message(call.message.chat.id, call.message.message_id)
     bot.send_message(
         call.message.chat.id,
