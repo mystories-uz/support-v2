@@ -6,12 +6,16 @@ from telebot import TeleBot
 
 from apps.support.models import Answer
 
+from ...bot.logger import logger
+
 bot = TeleBot(os.getenv("BOT_TOKEN"))
 
 
 @receiver(post_save, sender=Answer)
+
 def post_save_answer(sender, instance, created, **kwargs):
-    if created:
+    answer_type = getattr(instance, "answer_type", "site")
+    if created and answer_type=="site":
         try:
             bot.send_message(
                 instance.message.chat_id,

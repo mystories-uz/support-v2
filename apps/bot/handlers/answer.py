@@ -8,7 +8,7 @@ from apps.support.models import Messages, DailyMessages, Answer, Group, BotUsers
 
 
 def handle_answer_callback_query(call: CallbackQuery, bot: TeleBot):
-    activate(set_language_code(call.message.from_user.id))
+    activate(set_language_code(call.from_user.id))
     message_id = call.data.split("_")[1]
     bot.send_message(
         call.message.chat.id,
@@ -29,8 +29,10 @@ def save_answer(message: Message, bot: TeleBot, message_id: int):
             message.chat.id, _("The message you are replying to does not exist.")
         )
         return
-
-    Answer.objects.create(message=message_obj, text=answer_text)
+    answer = Answer(message=message_obj, text=answer_text)
+    answer._state.adding = True
+    answer.answer_type = "group"
+    answer.save()
 
     message_obj.is_answered = True
     message_obj.save()
