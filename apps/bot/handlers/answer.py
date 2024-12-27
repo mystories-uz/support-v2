@@ -30,7 +30,6 @@ def save_answer(message: Message, bot: TeleBot, message_id: int):
         )
         return
     answer = Answer(message=message_obj, text=answer_text)
-    answer._state.adding = True
     answer.answer_type = "group"
     answer.save()
 
